@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#big-logo {
+    width: 70px;
+    height: 70px;
+}
+
+#hamburger {
+    width: 30px;
+    height: 24px;
+}
+
+.section-1 {
+    #article-1 {
+        height: 623px;
+        background: rgba(233, 244, 255, 1);
+        font-family: proxima-nova, sans-serif;
+        font-size: 30pt;
+
+        img #pattern{
+            z-index: 2;
+        }
+
+        img #woman{
+            width: 531px;
+            height: 576px;
+            border-radius: 5px;
+        }
+        button {
+            width: 167px;
+            height: 54px;
+            background: rgba(67, 97, 238, 1);
+            border: none;
+            border-radius: 5px;
+            color: white;
+
+        }
+    }
+}
+    
