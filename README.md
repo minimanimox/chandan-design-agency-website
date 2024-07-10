@@ -3,5 +3,5 @@
 ## Authors and Contributors
 
 - **Author:** minimanimox
-- **Contributors:** juniahn-dev
+- **Contributors:** minimanimox, juniahn-dev
 - **Design:** https://www.figma.com/@uiuxchandan
