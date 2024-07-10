@@ -74,12 +74,13 @@ header {
 
     h3 {
       display: flex;
-      width: 70%;
+      width: 80%;
       margin: 0 auto;
 
-      font-size: 14pt;
+      font-size: 15pt;
       font-weight: normal;
       text-align: center;
+      line-height: 1.8;
     }
 
     .brand-wrapper {
@@ -91,11 +92,10 @@ header {
         margin-top: 80px;
         margin-right: 50px;
         width: 460px;
-      }
+      } 
 
-      .inner-article {
         .biz-info {
-          padding-top: 130px;
+          padding-top: 120px;
           padding-right: 12px;
 
           p {
@@ -107,7 +107,7 @@ header {
             letter-spacing: 0.1px;
           }
         }
-      }
+
     }
   }
 }
@@ -118,90 +118,67 @@ header {
       display: grid;
       grid-template-columns: repeat(4, 270px);
       grid-template-rows: repeat(2, 320px);
+      row-gap: 50px;
+      column-gap: 30px;
+      justify-content: center;
 
-      row-gap: 40px;
-      column-gap: 20px;
-
-      .link-container-1 {
-        background-image: url("../assets/Logo-design.png");
-        background-repeat: no-repeat;
-        background-size: cover; 
-      }
-      
-      .link-container-2 {
-        background-image: url("../assets/Development.png");
-        background-repeat: no-repeat;
-        background-size:auto; 
-      }
-
-      .link-container-3 {
-        background-image: url("../assets/Uiux.png");
-        background-repeat: no-repeat;
-        background-size:auto; 
-      }
-
-      .link-container-4 {
-        background-image: url("../assets/Digital.png");
-        background-repeat: no-repeat;
-        background-size:auto; 
-      }
-
-      .link-container-5 {
-        background-image: url("../assets/Content.png");
-        background-repeat: no-repeat;
-        background-size:auto; 
-      }
-
-      .link-container-6 {
-        background-image: url("../assets/Email.png");
-        background-repeat: no-repeat;
-        background-size:auto; 
-      }
-
-      .link-container-7 {
-        background-image: url("../assets/Motion.png");
-        background-repeat: no-repeat;
-        background-size:auto; 
-      }
-
+      .link-container-1, 
+      .link-container-2, 
+      .link-container-3, 
+      .link-container-4,
+      .link-container-5, 
+      .link-container-6, 
+      .link-container-7, 
       .link-container-8 {
-        background-image: url("../assets/Print.png");
         background-repeat: no-repeat;
-        background-size:auto; 
+        background-size: cover;
+        position: relative;
       }
 
-        .link-content {
-          padding-left: 30px;
-          padding-top: 210px;
+      .link-container-1 { background-image: url("../assets/Logo-design.png"); }
+      .link-container-2 { background-image: url("../assets/Development.png"); }
+      .link-container-3 { background-image: url("../assets/Uiux.png"); }
+      .link-container-4 { background-image: url("../assets/Digital.png"); }
+      .link-container-5 { background-image: url("../assets/Content.png"); }
+      .link-container-6 { background-image: url("../assets/Email.png"); }
+      .link-container-7 { background-image: url("../assets/Motion.png"); }
+      .link-container-8 { background-image: url("../assets/Print.png"); }
 
-            img {
-              text-align: center;
-            }
-            span {
-              color: white;
-              font-weight: bold;
-              font-size: 13pt;
-              letter-spacing: 0.5px;
+      .link-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        color: white;
+        padding-left: 30px;
+        padding-top: 215px;
 
-              padding: 10px;
-            }     
-            
-            p {
-              color: white;
-              font-size: 10pt;  
-            }
+        img {
+          margin-right: 12px;
         }
+
+        span {
+          display: flex;
+          align-items: center;
+          font-weight: bold;
+          font-size: 15pt;
+        }
+
+        p {
+          font-size: 12pt;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          margin-top: 20px;
+        }
+      }
     }
-          
-  }
-}
 
     button {
       margin: 40px auto;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
 
+    }
+  }
+}
 
 .section4-container {
   .wrapper {
