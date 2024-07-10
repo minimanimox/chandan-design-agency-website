@@ -40,14 +40,11 @@ header {
   }
 }
 
-/* to get rid of margin-top for the very first section*/
-section.section1-container {
+.section1-container {
   background: rgba(233, 244, 255, 1);
   height: 623px;
   margin-top: 0;
-}
 
-.section1-container {
   .wrapper {
     #article-1 {
       position: relative;
@@ -71,16 +68,8 @@ section.section1-container {
         width: 167px;
         height: 54px;
         margin-top: 40px;
-
-        background: rgba(67, 97, 238, 1);
-        border: none;
-        border-radius: 10px;
-
-        color: white;
-        font-size: 13pt;
-        font-weight: bold;
-        letter-spacing: 0.5px;
       }
+
     }
   }
 }
@@ -258,6 +247,29 @@ section.section1-container {
   }
 }
 
+.section3-container {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    row-gap: 40px;
+    column-gap: 20px;
+
+    .link-container {
+      .link-content {
+        img {
+          z-index: -1;
+        }
+
+        span {
+          z-index: 1;
+        }
+      }
+    }
+
+
+  }
+}
 .section6-container {
   .wrapper {
     display: grid;

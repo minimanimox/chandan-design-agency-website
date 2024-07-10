@@ -32,3 +32,25 @@ input {
   width: 1170px;
   margin: 0 auto;
 }
+
+.blue-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 54px;
+  padding: 10px;
+
+  background: rgba(67, 97, 238, 1);
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+  font-size: 13pt;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+
+  img {
+    margin-left: 10px;
+  }
+}
