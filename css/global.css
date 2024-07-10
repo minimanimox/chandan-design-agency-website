@@ -38,19 +38,24 @@ input {
   align-items: center;
   justify-content: center;
 
-  height: 54px;
-  padding: 10px;
+  width: fit-content;
+  padding: 16px 34px;
 
-  background: rgba(67, 97, 238, 1);
+  background: var(--default-blue);
   border: none;
   border-radius: 10px;
 
   color: white;
-  font-size: 13pt;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.5px;
 
   img {
     margin-left: 10px;
   }
+}
+
+:root {
+  --default-blue: #4361ee;
+  --light-blue: #e9f4ff;
 }
