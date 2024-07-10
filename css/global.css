@@ -41,7 +41,7 @@ input {
   width: fit-content;
   padding: 16px 34px;
 
-  background: rgba(67, 97, 238, 1);
+  background: var(--default-blue);
   border: none;
   border-radius: 10px;
 
@@ -53,4 +53,9 @@ input {
   img {
     margin-left: 10px;
   }
+}
+
+:root {
+  --default-blue: #4361ee;
+  --light-blue: #e9f4ff;
 }
