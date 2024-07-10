@@ -46,22 +46,20 @@ header {
   margin-top: 0;
 
   .wrapper {
-    #article-1 {
-      position: relative;
-      padding-top: 160px;
-      padding-right: 70px;
+    .main-wrapper {
+      display: flex;
 
-      #pattern {
-        position: absolute;
-        top: 44px;
-        left: 614px;
+      .left-title {
+        display: flex;
+        flex-direction: column;
+        padding-top: 161px;
       }
 
-      #woman {
-        border-radius: 15px;
-        position: absolute;
-        top: 68px;
-        right: 0px;
+      .img-wrapper {
+        img {
+          display: flex;
+          padding-top: 50px;
+        }
       }
 
       button {
@@ -73,25 +71,32 @@ header {
 
 .section2-container {
   .wrapper {
-    #article-2 {
-      position: relative;
 
-      h3 {
-        font-size: 14pt;
-        font-weight: normal;
-        text-align: center;
+    h3 {
+      display: flex;
+      width: 70%;
+      margin: 0 auto;
+
+      font-size: 14pt;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    .brand-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        margin-top: 80px;
+        margin-right: 50px;
+        width: 460px;
       }
 
       .inner-article {
-        img {
-          margin-top: 80px;
-          margin-right: 50px;
-          width: 460px;
-          float: left;
-        }
-
         .biz-info {
           padding-top: 130px;
+          padding-right: 12px;
 
           p {
             font-size: 14pt;
@@ -111,56 +116,92 @@ header {
   .wrapper {
     .link-wrapper {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 270px);
+      grid-template-rows: repeat(2, 320px);
 
       row-gap: 40px;
       column-gap: 20px;
 
-      .link-container {
-        position: relative;
+      .link-container-1 {
+        background-image: url("../assets/Logo-design.png");
+        background-repeat: no-repeat;
+        background-size: cover; 
+      }
+      
+      .link-container-2 {
+        background-image: url("../assets/Development.png");
+        background-repeat: no-repeat;
+        background-size:auto; 
+      }
+
+      .link-container-3 {
+        background-image: url("../assets/Uiux.png");
+        background-repeat: no-repeat;
+        background-size:auto; 
+      }
+
+      .link-container-4 {
+        background-image: url("../assets/Digital.png");
+        background-repeat: no-repeat;
+        background-size:auto; 
+      }
+
+      .link-container-5 {
+        background-image: url("../assets/Content.png");
+        background-repeat: no-repeat;
+        background-size:auto; 
+      }
+
+      .link-container-6 {
+        background-image: url("../assets/Email.png");
+        background-repeat: no-repeat;
+        background-size:auto; 
+      }
+
+      .link-container-7 {
+        background-image: url("../assets/Motion.png");
+        background-repeat: no-repeat;
+        background-size:auto; 
+      }
+
+      .link-container-8 {
+        background-image: url("../assets/Print.png");
+        background-repeat: no-repeat;
+        background-size:auto; 
+      }
 
         .link-content {
-          img {
-            position: absolute;
-            top: 65%;
-            left: 10%;
-          }
-
-          span {
-            position: absolute;
-            top: 67%;
-            left: 28%;
-
-            color: white;
-            font-weight: bold;
-            letter-spacing: 0.5px;
-          }
-
-          p {
-            position: absolute;
-            top: 82%;
-            left: 10%;
-
-            color: white;
-            font-size: 10pt;
+          padding-left: 30px;
+          padding-top: 210px;
 
             img {
-              position: absolute;
-              top: -12%;
-              left: 110%;
+              text-align: center;
             }
-          }
+            span {
+              color: white;
+              font-weight: bold;
+              font-size: 13pt;
+              letter-spacing: 0.5px;
+
+              padding: 10px;
+            }     
+            
+            p {
+              color: white;
+              font-size: 10pt;  
+            }
         }
-      }
     }
+          
+  }
+}
 
     button {
       margin: 40px auto;
       padding-left: 30px;
       padding-right: 30px;
     }
-  }
-}
+
 
 .section4-container {
   .wrapper {
@@ -361,19 +402,19 @@ header {
 
           margin-top: 36px;
 
-          li + li {
+          li+li {
             margin-left: 18px;
           }
         }
 
         .contact-info {
-          li + li {
+          li+li {
             margin-top: 20px;
           }
         }
 
         .explorer-info {
-          li + li {
+          li+li {
             margin-top: 16px;
           }
         }
