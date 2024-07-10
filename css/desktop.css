@@ -8,6 +8,16 @@ section {
   margin: 130px 0;
 }
 
+h1 {
+  margin-bottom: 10px;
+  font-size: 53px;
+  font-weight: bold;
+
+  span {
+    border-bottom: 3px solid #4361ee;
+  }
+}
+
 h2 {
   margin-bottom: 70px;
 
@@ -17,6 +27,61 @@ h2 {
   span {
     padding-bottom: 5px;
     border-bottom: 3px solid #4361ee;
+  }
+}
+
+header {
+  padding: 30px;
+
+  .inner-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* to get rid of margin-top for the very first section*/
+section.section1-container {
+  background: rgba(233, 244, 255, 1);
+  height: 623px;
+  margin-top: 0;
+}
+
+.section1-container {
+  .wrapper {
+    #article-1 {
+      position: relative;
+      padding-top: 160px;
+      padding-right: 70px;
+
+      #pattern {
+        position: absolute;
+        top: 44px;
+        left: 614px;
+      }
+
+      #woman {
+        border-radius: 15px;
+        position: absolute;
+        top: 68px;
+        right: 0px;
+      }
+
+      button {
+        width: 167px;
+        height: 54px;
+        margin-top: 40px;
+
+        background: rgba(67, 97, 238, 1);
+        border: none;
+        border-radius: 10px;
+
+        color: white;
+        font-size: 13pt;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+      }
+    }
   }
 }
 
@@ -72,6 +137,42 @@ h2 {
 
         &#dot {
           background-color: #1a2630;
+        }
+      }
+    }
+  }
+}
+
+.section2-container {
+  .wrapper {
+    #article-2 {
+      position: relative;
+
+      h3 {
+        font-size: 14pt;
+        font-weight: normal;
+        text-align: center;
+      }
+
+      .inner-article {
+        img {
+          margin-top: 80px;
+          margin-right: 50px;
+          width: 460px;
+          float: left;
+        }
+
+        .biz-info {
+          padding-top: 130px;
+
+          p {
+            font-size: 14pt;
+            font-weight: normal;
+            color: rgb(77, 76, 76);
+            line-height: 1.8;
+            margin-bottom: 20px;
+            letter-spacing: 0.1px;
+          }
         }
       }
     }
