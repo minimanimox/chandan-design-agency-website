@@ -203,16 +203,14 @@ h2 {
     align-items: center;
 
     .footer-contents {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr 1fr 0.8fr 1.2fr;
+      gap: 30px;
 
+      width: 100%;
       margin-bottom: 60px;
 
       .content {
-        & + & {
-          margin-left: 140px;
-        }
-
         h3 {
           margin-bottom: 20px;
 
