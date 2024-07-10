@@ -301,6 +301,7 @@ header {
 
         font-size: 24px;
         font-weight: normal;
+        line-height: 140%;
 
         p {
           display: flex;
