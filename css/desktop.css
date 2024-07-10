@@ -342,6 +342,7 @@ header {
 
         font-size: 24px;
         font-weight: normal;
+        line-height: 140%;
 
         p {
           display: flex;
@@ -408,8 +409,19 @@ header {
         }
 
         .contact-info {
-          li+li {
-            margin-top: 20px;
+          li {
+            display: flex;
+            align-items: center;
+
+            img {
+              filter: invert(1);
+              width: 18px;
+              margin-right: 10px;
+            }
+
+            & + & {
+              margin-top: 20px;
+            }
           }
         }
 
