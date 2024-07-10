@@ -249,27 +249,59 @@ header {
 
 .section3-container {
   .wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    .link-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
 
-    row-gap: 40px;
-    column-gap: 20px;
+      row-gap: 40px;
+      column-gap: 20px;
 
-    .link-container {
-      .link-content {
-        img {
-          z-index: -1;
-        }
+      .link-container {
+        position: relative;
 
-        span {
-          z-index: 1;
+        .link-content {
+          img {
+            position: absolute;
+            top: 65%;
+            left: 10%;
+          }
+
+          span {
+            position: absolute;
+            top: 67%;
+            left: 28%;
+
+            color: white;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+          }
+
+          p {
+            position: absolute;
+            top: 82%;
+            left: 10%;
+
+            color: white;
+            font-size: 10pt;
+
+            img {
+              position: absolute;
+              top: -12%;
+              left: 110%;
+            }
+          }
         }
       }
     }
 
-
+    button {
+      margin: 40px auto;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 }
+
 .section6-container {
   .wrapper {
     display: grid;
