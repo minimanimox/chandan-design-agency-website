@@ -71,12 +71,9 @@ header {
 
 .section2-container {
   .wrapper {
-
     h3 {
-      display: flex;
-      width: 80%;
       margin: 0 auto;
-
+      width: 80%;
       font-size: 15pt;
       font-weight: normal;
       text-align: center;
@@ -94,28 +91,33 @@ header {
         width: 460px;
       } 
 
-        .biz-info {
-          padding-top: 120px;
-          padding-right: 12px;
+      .biz-info {
+        padding-top: 120px;
+        padding-right: 12px;
 
-          p {
-            font-size: 14pt;
-            font-weight: normal;
-            color: rgb(77, 76, 76);
-            line-height: 1.8;
-            margin-bottom: 20px;
-            letter-spacing: 0.1px;
-          }
+        p {
+          font-size: 14pt;
+          font-weight: normal;
+          color: rgb(77, 76, 76);
+          line-height: 1.8;
+          margin-bottom: 20px;
+          letter-spacing: 0.1px;
         }
-
+      }
     }
   }
 }
 
 .section3-container {
+  background-color: var(--light-blue);
   .wrapper {
+    h2 {
+      text-align: center;
+      margin: 80px;
+    }
     .link-wrapper {
       display: grid;
+      margin-top: 60px;
       grid-template-columns: repeat(4, 270px);
       grid-template-rows: repeat(2, 320px);
       row-gap: 50px;
