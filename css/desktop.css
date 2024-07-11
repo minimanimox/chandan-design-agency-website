@@ -122,17 +122,9 @@ header {
       column-gap: 30px;
       justify-content: center;
 
-      .link-container-1, 
-      .link-container-2, 
-      .link-container-3, 
-      .link-container-4,
-      .link-container-5, 
-      .link-container-6, 
-      .link-container-7, 
-      .link-container-8 {
+      .link-container {
         background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
       }
 
       .link-container-1 { background-image: url("../assets/Logo-design.png"); }
