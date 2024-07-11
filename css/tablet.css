@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width : 1024px) {
   section {
     margin: 100px 0;
   }
@@ -85,9 +85,6 @@
 
   .section3-container {
     .wrapper {
-      padding-left: 30px;
-      padding-right: 30px;
-
       .link-wrapper {
         grid-template-columns: repeat(2, 314px);
         grid-template-rows: repeat(2, 320px);
