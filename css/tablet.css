@@ -75,6 +75,7 @@
 
   .section6-container {
     .wrapper {
+      grid-template-columns: repeat(2, 1fr);
       .blog-container {
         .blog-img {
           width: 314px;
