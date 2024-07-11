@@ -46,22 +46,20 @@ header {
   margin-top: 0;
 
   .wrapper {
-    #article-1 {
-      position: relative;
-      padding-top: 160px;
-      padding-right: 70px;
+    .main-wrapper {
+      display: flex;
 
-      #pattern {
-        position: absolute;
-        top: 44px;
-        left: 614px;
+      .left-title {
+        display: flex;
+        flex-direction: column;
+        padding-top: 161px;
       }
 
-      #woman {
-        border-radius: 15px;
-        position: absolute;
-        top: 68px;
-        right: 0px;
+      .img-wrapper {
+        img {
+          display: flex;
+          padding-top: 50px;
+        }
       }
 
       button {
@@ -73,25 +71,32 @@ header {
 
 .section2-container {
   .wrapper {
-    #article-2 {
-      position: relative;
 
-      h3 {
-        font-size: 14pt;
-        font-weight: normal;
-        text-align: center;
-      }
+    h3 {
+      display: flex;
+      width: 80%;
+      margin: 0 auto;
 
-      .inner-article {
-        img {
-          margin-top: 80px;
-          margin-right: 50px;
-          width: 460px;
-          float: left;
-        }
+      font-size: 15pt;
+      font-weight: normal;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    .brand-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        margin-top: 80px;
+        margin-right: 50px;
+        width: 460px;
+      } 
 
         .biz-info {
-          padding-top: 130px;
+          padding-top: 120px;
+          padding-right: 12px;
 
           p {
             font-size: 14pt;
@@ -102,7 +107,7 @@ header {
             letter-spacing: 0.1px;
           }
         }
-      }
+
     }
   }
 }
@@ -111,53 +116,58 @@ header {
   .wrapper {
     .link-wrapper {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-
-      row-gap: 40px;
-      column-gap: 20px;
+      grid-template-columns: repeat(4, 270px);
+      grid-template-rows: repeat(2, 320px);
+      row-gap: 50px;
+      column-gap: 30px;
+      justify-content: center;
 
       .link-container {
-        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
 
-        .link-content {
-          img {
-            position: absolute;
-            top: 65%;
-            left: 10%;
-          }
+      .link-container-1 { background-image: url("../assets/Logo-design.png"); }
+      .link-container-2 { background-image: url("../assets/Development.png"); }
+      .link-container-3 { background-image: url("../assets/Uiux.png"); }
+      .link-container-4 { background-image: url("../assets/Digital.png"); }
+      .link-container-5 { background-image: url("../assets/Content.png"); }
+      .link-container-6 { background-image: url("../assets/Email.png"); }
+      .link-container-7 { background-image: url("../assets/Motion.png"); }
+      .link-container-8 { background-image: url("../assets/Print.png"); }
 
-          span {
-            position: absolute;
-            top: 67%;
-            left: 28%;
+      .link-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        color: white;
+        padding-left: 30px;
+        padding-top: 215px;
 
-            color: white;
-            font-weight: bold;
-            letter-spacing: 0.5px;
-          }
+        img {
+          margin-right: 12px;
+        }
 
-          p {
-            position: absolute;
-            top: 82%;
-            left: 10%;
+        span {
+          display: flex;
+          align-items: center;
+          font-weight: bold;
+          font-size: 15pt;
+        }
 
-            color: white;
-            font-size: 10pt;
-
-            img {
-              position: absolute;
-              top: -12%;
-              left: 110%;
-            }
-          }
+        p {
+          font-size: 12pt;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          margin-top: 20px;
         }
       }
     }
 
     button {
       margin: 40px auto;
-      padding-left: 30px;
-      padding-right: 30px;
+
     }
   }
 }
@@ -362,7 +372,7 @@ header {
 
           margin-top: 36px;
 
-          li + li {
+          li+li {
             margin-left: 18px;
           }
         }
@@ -385,7 +395,7 @@ header {
         }
 
         .explorer-info {
-          li + li {
+          li+li {
             margin-top: 16px;
           }
         }
