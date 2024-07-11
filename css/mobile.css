@@ -1,8 +1,16 @@
-@media screen and (max-width: 375px) {
+@media screen and (max-width : 480px){
   section {
     margin: 70px 0;
   }
 
+  h1 {
+    margin-bottom: 30px;
+    
+    font-size: 21px;
+    text-align: center;
+    line-height: 1.7;
+  }
+  
   h2 {
     margin-bottom: 40px;
 
@@ -13,14 +21,111 @@
     }
   }
 
+  header {
+    padding: 20px;
+  }
+
   .wrapper {
-    width: auto;
     margin: 0 20px;
   }
+
+  .section1-container {
+    height: 493px;
+
+    .wrapper {
+      .main-wrapper {
+        flex-direction: column;
+        .left-title {
+          padding-top: 40px;
+        }
+
+        .img-wrapper {
+          img {
+            margin: 0 auto; 
+          }
+        }
+
+        button {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .section2-container {
+    padding-top: 50px;
+    .wrapper {
+      .brand-wrapper {
+        img {
+          width: 335px;
+        } 
+
+          .biz-info {
+            padding: 0 20px;
+
+            p {
+              text-align: center;
+            }
+          }
+      }
+    }
+  }
+
+  .section3-container {
+    .wrapper {
+      h2 {
+        margin: 40px;
+      }
+
+      .link-wrapper {
+        margin-top: 40px;
+        grid-template-columns: repeat(2, 158px);
+        grid-template-rows: repeat(2, 161px);
+        row-gap: 20px;
+
+        .link-container {
+          background-size: 158px 161px;
+        }
+        
+        .link-content {
+          padding-top: 90px;
+          padding-left: 10px;
+          padding-right: 5px;
+
+          img {
+            margin-right: 10px;
+          }
+
+          span {
+            font-size: 11pt;
+          }
+
+          p {
+            font-size: 9pt;
+            margin-top: 0;
+          }
+
+        }
+      }
+    }
+
+    button {
+      margin: 40px auto;
+    }
+  }
+
 
   .section4-container {
     .wrapper {
       .content-wrapper {
+        img {
+          display: none;
+        }
+
+        .right-slider-btn {
+          display: none;
+        }
+  
         .slide-content {
           padding: 40px 30px 30px;
 
@@ -69,6 +174,7 @@
       flex-direction: column;
 
       .blog-container {
+        width: 314px;
         .blog-content {
           padding: 20px;
         }

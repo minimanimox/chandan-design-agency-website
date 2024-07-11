@@ -1,6 +1,11 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width : 1024px) {
   section {
     margin: 100px 0;
+  }
+
+  h1 {
+    font-size: 31px;
+    font-weight: bold;
   }
 
   h2 {
@@ -13,9 +18,91 @@
     }
   }
 
+  header {
+    padding: 30px;
+  
+    .inner-icons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
   .wrapper {
     width: auto;
     margin: 0 60px;
+  }
+
+  .section1-container {
+    height: 334px;
+  
+    .wrapper {
+      .main-wrapper {
+        display: flex;
+  
+        .left-title {
+          padding-top: 57px;
+        }
+  
+        .img-wrapper {
+          img {
+            width: 279px;
+          }
+        }
+  
+        button {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  .section2-container {
+    .wrapper {
+      h3 {
+        width: 100%;
+        font-size: 12pt;
+      }
+  
+      .brand-wrapper {
+        flex-direction: column;
+  
+        img {
+          margin: 40px auto;
+          width: 342px;
+        } 
+
+        .biz-info {
+          padding: 0 60px;
+  
+          p {
+            font-size: 12pt;
+          }
+        }
+      }
+    }
+  }
+
+  .section3-container {
+    .wrapper {
+      .link-wrapper {
+        grid-template-columns: repeat(2, 314px);
+        grid-template-rows: repeat(2, 320px);
+        row-gap: 40px;
+        column-gap: 20px;
+
+        .link-container {
+          background-size: 314px 320px;
+        }
+
+        .link-container-5,
+        .link-container-6,
+        .link-container-7,
+        .link-container-8 {
+          display: none;
+        }
+      }
+    }
   }
 
   .section4-container {
