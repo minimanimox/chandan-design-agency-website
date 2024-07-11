@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   section {
     margin: 70px 0;
   }
@@ -41,8 +41,7 @@
 
         .img-wrapper {
           img {
-            margin-left: 10px;
-            margin-bottom: 40px;
+            margin: 0 auto; 
           }
         }
 
